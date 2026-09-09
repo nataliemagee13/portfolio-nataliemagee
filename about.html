@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Inline CSS for Learning Purposes  --->
-    <style> 
-h1 {
-
-    Color: rgb (226, 126,226);
-    font-family :'Gill Sans', "Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
-}
-
-
-    </style>
 <head>
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a>
-</nav>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>
-    <section>
-        <h2> About Me </h2>
-        <p> I am a Strategic Communications Major and a DCDA Minor. I am taking this class because I was to build on my code skills and learn about different platforms</p>
-    </section>
-    <section>
-        <h2> What I Want to Learn</h2>
-        <p>I want to learn how to use code skills to build realisitc platforms</p>
+<nav class="nav-container">
+    <a href="index.html" class="logo">Natalie Magee</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
+<header>
+    <div class="header-text">
+        <h1>About Me</h1>
+        <p>Learn more about my interests and goals.</p>
+    </div>
+</header>
+<main>
+    <section class="about">
+        <div class="about-image">
+            <img src="images/WUA_Uni_Portrait_Edit-8.jpg" alt="Portrait of Natalie Magee">
+        </div>
+        <div class="about-text">
+            <h2 id="about">About Me</h2>
+            <p>I am a Strategic Communications major with a minor in Digital Culture and Data Analytics. I am building my code skills so I can create realistic and useful digital platforms.</p>
+            <p>I want to keep learning how writing, design, and technology can work together to communicate clearly.</p>
+        </div>
     </section>
 
+    <section id="learning-goals">
+        <h2>What I Want to Learn</h2>
+        <p>I want to strengthen my front-end development skills and learn more ways to build accessible digital experiences.</p>
+    </section>
 </main>
-</body>
 <footer>
     <p>&copy; 2026 Your Name · Personal Portfolio</p>
 </footer>
+</body>
 </html>
