@@ -1,0 +1,245 @@
+/* ==========================
+   1. RESET
+   ========================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================
+   2. DESIGN TOKENS
+   ========================== */
+:root {
+    --color-bg: #fafafa;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f1f5f9;
+    --color-border: #e5e7eb;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --color-accent: #0369a1;
+
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+
+    --text-base: 1rem;
+    --text-h3: 1.25rem;
+    --text-h2: 1.5rem;
+    --text-h1: 2.25rem;
+    --leading-body: 1.6;
+    --leading-heading: 1.2;
+    --font-stack: system-ui, 'Segoe UI', Tahoma, sans-serif;
+    --radius-md: 8px;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    --page-width: 64rem;
+    --reading-width: 70ch;
+}
+
+/* ==========================
+   3. BASE ELEMENT STYLES
+   ========================== */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-size: var(--text-base);
+    font-family: var(--font-stack);
+    line-height: var(--leading-body);
+}
+
+h1 {
+    font-size: var(--text-h1);
+    line-height: var(--leading-heading);
+}
+
+h2 {
+    font-size: var(--text-h2);
+    line-height: var(--leading-heading);
+}
+
+h3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-heading);
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: var(--space-sm);
+}
+
+p {
+    margin-bottom: var(--space-md);
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: var(--space-lg);
+}
+
+a {
+    color: var(--color-accent);
+}
+
+/* ==========================
+   4. LAYOUT
+     Breakpoints used in this file:
+         768px  — tablet and larger
+     (CSS variables cannot be used inside @media conditions,
+        so breakpoints are documented here instead of tokenized.)
+   ========================== */
+body {
+    max-width: var(--page-width);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background-color: var(--color-surface-alt);
+    margin-bottom: var(--space-xl);
+}
+
+.header-text {
+    flex: 1;
+    min-width: 16rem;
+}
+
+.header-pic {
+    flex: 1;
+    background-color: var(--color-surface);
+    min-height: 18rem;
+    min-width: 16rem;
+    align-self: stretch;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+}
+
+.header-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    padding: var(--space-md) 0;
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+section,
+aside {
+    margin-bottom: var(--space-xl);
+}
+
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    min-width: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+}
+
+.skills-grid {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: var(--space-md);
+}
+
+.skill-card {
+    background-color: var(--color-surface-alt);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.about-image {
+    flex: 1;
+    min-width: 16rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+
+.about-text {
+    flex: 2;
+    min-width: 16rem;
+    max-width: var(--reading-width);
+}
+
+.project-list {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-card.featured {
+        grid-column: span 2;
+    }
+}
+
+.project-card {
+    padding: var(--space-lg);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.logo {
+    font-size: var(--text-h3);
+    font-weight: bold;
+    color: var(--color-text);
+    text-decoration: none;
+}

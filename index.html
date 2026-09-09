@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <nav>
-    <a href="index.html">Home</a> |
-    <a href="about.html">About</a>
-</nav>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<nav class="nav-container">
+    <a href="index.html" class="logo">Natalie Magee</a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+    </div>
+</nav>
 <header>
-    <h1>Natalie Magee</h1>
-    <p>Welcome to my portfolio! My name is Natalie Magee. I am from Connecticut and I love Taylor Swift</p>
-</header> 
+    <div class="header-text">
+        <h1>Natalie Magee</h1>
+        <p>Welcome to my portfolio! My name is Natalie Magee. I am from Connecticut and I love Taylor Swift</p>
+    </div>
+    <div class="header-pic">
+        <img src="images/WUA_Uni_Portrait_Edit-4.jpg" alt="Portrait of Natalie Magee">
+    </div>
+ </header>
 
-</body>
+<main>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+            <li class="skill-card">
+                <h3>Writing</h3>
+                <p>Clear, audience-focused writing for digital and strategic communication.</p>
+            </li>
+            <li class="skill-card">
+                <h3>Web Design</h3>
+                <p>Building accessible pages with semantic HTML and maintainable CSS.</p>
+            </li>
+            <li class="skill-card">
+                <h3>Content Strategy</h3>
+                <p>Planning useful content that connects people with the information they need.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="about">
+        <div class="about-image">
+            <img src="images/WUA_Uni_Portrait_Edit-8.jpg" alt="Portrait of Natalie Magee">
+        </div>
+        <div class="about-text">
+            <h2 id="about">About Me</h2>
+            <p>I am a Strategic Communications major with a minor in Digital Culture and Data Analytics. I enjoy learning how writing, design, and technology work together.</p>
+            <p>This portfolio documents my growth as I build thoughtful and realistic digital platforms.</p>
+            <a href="about.html">Read more about me</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul class="project-list">
+            <li class="project-card featured">
+                <h3>Personal Portfolio</h3>
+                <time datetime="2026">2026</time>
+                <p>A semantic, responsive portfolio built while developing my HTML and CSS skills.</p>
+            </li>
+            <li class="project-card">
+                <h3>Digital Storytelling Project</h3>
+                <time datetime="2026">2026</time>
+                <p>A communication project focused on presenting ideas clearly through digital media.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me to talk about communication, digital culture, and creative projects.</p>
+    </section>
+</main>
+
 <footer>
-    <p>&copy; 2026 Your Name · Personal Portfolio</p>
+    <p>&copy; 2026 Natalie Magee · Personal Portfolio</p>
 </footer>
+</body>
 </html>
