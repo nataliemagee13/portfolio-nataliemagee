@@ -1,17 +1,17 @@
-# Natalie Magee - Personal Portfolio
+# Natalie Magee — Portfolio Website
 
-A personal portfolio site built from scratch for WRIT 40363. It introduces my interests in strategic communications, digital culture, and accessible web design.
+## Description
+A personal portfolio site showcasing my background in strategic communications, brand strategy, and agency work, along with my skills and project experience.
 
-**Live site:** https://nataliemagee13.github.io/portfolio-nataliemagee/
+## Technologies Used
+- HTML5
+- CSS3
+- GitHub Pages
 
-**Canva portfolio:** https://agiftforsara.my.canva.site/natalie-magee-portfolio
-
-## Built with
-
-- Semantic HTML5
-- CSS with design tokens, Flexbox, and Grid
-- Git and GitHub Pages
+## Live Site
+https://nataliemagee13.github.io/portfolio-nataliemagee/
 
 ## Notes
-
-This portfolio is an active course project and will continue to grow as I develop new communication and web design work.
+- Uses semantic HTML landmarks, descriptive image alt text, visible focus states, and descriptive links for accessibility.
+- Uses responsive CSS with design tokens, Flexbox, and Grid.
+- Canva portfolio: https://agiftforsara.my.canva.site/natalie-magee-portfolio
