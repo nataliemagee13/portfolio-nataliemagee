@@ -28,6 +28,8 @@ img {
     --color-text: #1f2937;
     --color-muted: #6b7280;
     --color-accent: #047857;
+    --color-featured: #ecfdf5;
+    --color-accent-soft: #d1fae5;
 
     --space-sm: 0.5rem;
     --space-md: 1rem;
@@ -38,6 +40,7 @@ img {
     --text-h3: 1.25rem;
     --text-h2: 1.5rem;
     --text-h1: 2.25rem;
+    --text-small: 0.875rem;
     --leading-body: 1.6;
     --leading-heading: 1.2;
     --font-stack: 'Inter', system-ui, -apple-system, sans-serif;
@@ -47,6 +50,7 @@ img {
 
     --page-width: 64rem;
     --reading-width: 70ch;
+    --tracking-wide: 0.08em;
 }
 
 /* ==========================
@@ -134,6 +138,19 @@ header {
     min-width: 16rem;
 }
 
+.eyebrow,
+.project-type {
+    color: var(--color-accent);
+    font-size: var(--text-small);
+    font-weight: 600;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+}
+
+.text-link {
+    font-weight: 600;
+}
+
 .header-pic {
     flex: 1;
     background-color: var(--color-surface);
@@ -201,6 +218,10 @@ aside {
     padding: var(--space-md);
 }
 
+.skill-card ul {
+    color: var(--color-muted);
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -248,6 +269,25 @@ aside {
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
+}
+
+.project-card.featured {
+    background-color: var(--color-featured);
+    border-color: var(--color-accent);
+}
+
+.project-role {
+    color: var(--color-muted);
+    font-weight: 600;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    padding: var(--space-md);
+    background-color: var(--color-accent-soft);
+    border-radius: var(--radius-md);
 }
 
 .logo {

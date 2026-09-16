@@ -4,6 +4,8 @@ A personal portfolio site built from scratch for WRIT 40363. It introduces my in
 
 **Live site:** https://nataliemagee13.github.io/portfolio-nataliemagee/
 
+**Canva portfolio:** https://agiftforsara.my.canva.site/natalie-magee-portfolio
+
 ## Built with
 
 - Semantic HTML5
