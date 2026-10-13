@@ -22,6 +22,21 @@ img {
     max-width: 100%;
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #79503f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #b78c74;
+}
+
 button,
 input,
 select,

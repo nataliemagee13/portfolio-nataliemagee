@@ -8,6 +8,21 @@ html {
   font-family: "DM Sans", sans-serif;
 }
 
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #79503f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+  color: #b78c74;
+}
+
 :root {
   --background: #a9d3e6;
   --stripe: rgba(255, 255, 255, 0.27);

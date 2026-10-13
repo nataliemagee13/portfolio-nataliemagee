@@ -239,6 +239,21 @@ aside {
     border-radius: var(--radius-md);
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: var(--space-md);
+    color: #79503f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #b78c74;
+}
+
 .about-text {
     flex: 2;
     min-width: 16rem;
