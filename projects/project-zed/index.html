@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swiftie Song Finder</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="back-link" href="../../index.html">&larr; Back to portfolio</a>
+  <main>
+    <div class="bracelet" aria-hidden="true">
+      <span>S</span><span>W</span><span>I</span><span>F</span><span>T</span><span>I</span><span>E</span>
+    </div>
+    <p class="eyebrow">A little soundtrack magic</p>
+    <h1>Swiftie Song Finder</h1>
+    <p class="subtitle">A song for every era, a soundtrack for every mood.</p>
+
+    <form>
+      <label for="mood-select">Choose a mood</label>
+      <select id="mood-select" name="mood">
+        <option value="">Choose a mood</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="hype">Hype</option>
+        <option value="love">Love</option>
+        <option value="nostalgic">Nostalgic</option>
+        <option value="revenge">Revenge</option>
+      </select>
+      <div class="recommend-actions">
+        <button id="recommend-btn" type="button">Recommend a song</button>
+        <button id="surprise-btn" type="button">Surprise me</button>
+      </div>
+    </form>
+
+    <p id="message" role="status" aria-live="polite"></p>
+
+    <section id="result" hidden>
+      <p class="result-kicker">Your Swiftie song</p>
+      <span class="result-sparkle" aria-hidden="true">✦</span>
+      <h2 id="song-title"></h2>
+      <p class="album-line">from <span id="song-album"></span></p>
+      <div class="result-actions">
+        <button id="save-favorite-btn" type="button">Save to favorites</button>
+        <a id="spotify-link" href="#" target="_blank" rel="noopener">Listen on Spotify</a>
+        <div class="share-action">
+          <button id="share-song-btn" type="button" aria-describedby="share-hint">Share my song</button>
+          <small id="share-hint" class="share-hint">Copies a ready-to-share message</small>
+        </div>
+        <button id="again-btn" type="button">Try again</button>
+      </div>
+    </section>
+
+    <section id="favorites-section" aria-labelledby="favorites-heading">
+      <p class="result-kicker">Your little collection</p>
+      <h2 id="favorites-heading">My favorites</h2>
+      <p id="favorites-empty">No favorites yet. Find your song!</p>
+      <p id="era-stat" class="era-stat" hidden aria-live="polite"></p>
+      <ul id="favorites-list"></ul>
+    </section>
+  </main>
+</body>
+</html>

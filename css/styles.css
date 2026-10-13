@@ -110,10 +110,16 @@ a:focus-visible {
     outline-offset: 2px;
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: var(--space-md);
+    font-weight: 600;
+}
+
 /* ==========================
    4. LAYOUT
      Breakpoints used in this file:
-         768px  — tablet and larger
+         768px  - tablet and larger
      (CSS variables cannot be used inside @media conditions,
         so breakpoints are documented here instead of tokenized.)
    ========================== */

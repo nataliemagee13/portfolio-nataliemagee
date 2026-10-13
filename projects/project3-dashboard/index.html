@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalie's Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="back-link" href="../../index.html">&larr; Back to portfolio</a>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <header>
+        <h1>Natalie's Dashboard</h1>
+        <button type="button" id="theme-toggle" class="btn btn-primary">Toggle dark mode</button>
+    </header>
+    <main id="main" class="dashboard">
+        <section class="widget">
+            <h2>Fort Worth Weather</h2>
+            <div id="weather-display">Loading weather…</div>
+        </section>
+        <section class="widget">
+            <h2>Daily Taylor</h2>
+            <div id="quote-display">Loading quotes…</div>
+            <button type="button" id="new-quote-button" class="btn btn-primary" disabled>Shuffle</button>
+        </section>
+        <section class="widget task-widget">
+            <h2>Tasks</h2>
+            <form id="task-form" class="task-form">
+                <label for="task-input" class="sr-only">New task</label>
+                <input id="task-input" type="text" placeholder="Add a task" autocomplete="off" required>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+            </form>
+            <div id="task-stats" class="task-stats" aria-live="polite"></div>
+            <div id="task-list" class="task-list"></div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
